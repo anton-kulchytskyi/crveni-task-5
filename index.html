@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			.flex, .row {
+    			display: flex;
+			}
+			.column {
+			display: flex;
+			flex-direction: column;
+			}
+			.align-start {
+				align-items: flex-start;
+			}
+			.align-center {
+				align-items: center;
+			}
+			.align-end {
+				align-items: flex-end;
+			}
+			.align-stretch {
+				align-items: stretch;
+			}
+			.self-stretch {
+				align-self: stretch;
+			}
+			.justify-start {
+				justify-content: flex-start;
+			}
+			.justify-center {
+				justify-content: center;
+			}
+			.justify-end {
+				justify-content: flex-end;
+			}
+			.justify-between {
+				justify-content: space-between;
+			}
+			.justify-around {
+				justify-content: space-around;
+			}
+			.w-100-perc {
+				width: 100%;
+			}
+			.h-100-perc {
+				height: 100%;
+			}
+			.grow-1 {
+				flex-grow: 1;
+			}
+			.grow-2 {
+				flex-grow: 2;
+			}
+			.grow-3 {
+				flex-grow: 3;
+			}
+			.grow-4 {
+				flex-grow: 4;
+			}
+			.grow-5 {
+				flex-grow: 5;
+			}
+			.grow-6 {
+				flex-grow: 6;
+			}
+			.grow-7 {
+				flex-grow: 7;
+			}
+			.grow-8 {
+				flex-grow: 8;
+			}
+			.grow-9 {
+				flex-grow: 9;
+			}
+			.grow-10 {
+				flex-grow: 10;
+			}
+			.wrapper  {
+				height: 600px;
+    			width: 90%;
+    			margin: 0 auto;    
+			}
+			.bg {
+				background-color: steelblue;
+			}
+			.margin-r {
+				margin-right: 30px;
+			}
+			.margin-b {
+				margin-bottom: 30px;
+			}
+		</style>
+		
+		<title>Task-5-wordpress&flexbox</title>
+
+	</head>
+	<body>
+
+		<div class="wrapper row">
+
+			<div class="column grow-2 margin-r">
+
+				<div class="row grow-3 margin-b">
+
+					<div class="grow-1 margin-r bg">1</div>
+
+					<div class="grow-1 bg">2</div>
+
+				</div>
+
+				<div class="row grow-4">
+
+					<div class="grow-1 margin-r bg">3</div>
+
+					<div class="grow-1 column">
+
+						<div class="grow-2 margin-b bg">4</div>
+
+						<div class="grow-1 bg">5</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row grow-3">
+
+				<div class="column grow-1 margin-r">
+
+					<div class="grow-5 margin-b bg">6</div>
+
+					<div style="width: 213%;" class="grow-1 bg">7</div>
+
+				</div>
+
+				<div class="grow-2 column">
+
+					<div class="grow-2 margin-b bg">8</div>
+
+					<div class="grow-6 row">
+
+						<div style="height: 67%;" class="grow-1 margin-r bg">9</div>
+						
+						<div class="grow-1 bg">10</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>		
+	</body>
+</html>
